@@ -1,0 +1,26 @@
+{
+  "name": "academy-schedule-manager-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "dd": "git add . && git commit -m \"debug deploy\" && git push heroku master",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cloudinary": "^1.13.2",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "linebot": "^1.4.1",
+    "lodash": "^4.17.11",
+    "moment": "^2.23.0",
+    "mongoose": "^5.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.5"
+  }
+}
