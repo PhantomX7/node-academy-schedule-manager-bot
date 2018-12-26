@@ -4,8 +4,9 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js",
+    "start": "nodemon app.js",
+    "dev": "concurrently \"npm run start\" \"npm run webhook\"",
+    "webhook": "forever webhook.js",
     "dd": "git add . && git commit -m \"debug deploy\" && git push heroku master",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,6 +22,9 @@
     "mongoose": "^5.4.0"
   },
   "devDependencies": {
+    "concurrently": "^4.1.0",
+    "forever": "^0.15.3",
+    "localtunnel": "^1.9.1",
     "nodemon": "^1.18.5"
   }
 }

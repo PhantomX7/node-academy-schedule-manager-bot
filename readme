@@ -1,0 +1,3 @@
+npm run dev
+access webhook locally in {subdomain}.localtunnel.me 
+set subdomain in webhook.js
